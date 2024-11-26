@@ -1,0 +1,254 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="demo21111.Catalog"
+        Title="Catalog">
+  <Grid
+	  ColumnDefinitions="200,200,*"
+	  RowDefinitions="200,600,200">
+	  <StackPanel
+		  Grid.Column="0"
+		  Grid.Row="0">
+		  <Button 
+			  Click="vyhod_Click"
+			  Content="Выйти">
+			  </Button>
+		  <Button
+			  Name="korzBtn"
+			  Click="Korz_Click"
+			 Content="Перейти в корзину" >
+		  </Button>
+		  <TextBlock
+			  Text="Сортировка по стоимости">
+			  </TextBlock>
+		  <ComboBox
+			  SelectionChanged="sort_SelectionChanged"
+			  Name="sort">
+			  <ComboBoxItem>
+				  Стоимость по убыванию
+			  </ComboBoxItem>
+			  <ComboBoxItem>
+				  Стоимость по возрастанию
+			  </ComboBoxItem>
+			  <ComboBoxItem>
+				  Снять сортировку
+			  </ComboBoxItem>
+		  </ComboBox>
+	  </StackPanel>
+	  <StackPanel
+		  Grid.Column="1"
+		  Grid.Row="0">
+		  <TextBlock
+			  Text="Фильтрация по скидке">
+			  </TextBlock>
+		  <ComboBox
+			   Name="filter"
+			  SelectionChanged="filter_SelectionChanged"
+			 >
+			  <ComboBoxItem>
+				  Все диапазоны
+			  </ComboBoxItem>
+			  <ComboBoxItem>
+				  0-9,99%
+			  </ComboBoxItem>
+			  <ComboBoxItem>
+				  10-14,99%
+			  </ComboBoxItem>
+			  <ComboBoxItem>
+				  15% и более
+			  </ComboBoxItem>
+		  </ComboBox>
+		  </StackPanel>
+	  <StackPanel
+		 Grid.Column="2"
+		 Grid.Row="0">
+		  <TextBlock
+			   HorizontalAlignment="Left"
+			  Text="Поисковая строка">
+			  </TextBlock>
+		  <TextBox
+			  HorizontalAlignment="Left"
+			  Width="200"
+			  Name="searchText"
+			  KeyUp="poisk_KeyUp">
+			  </TextBox>
+		  </StackPanel>
+	  <StackPanel
+		  Orientation="Vertical"
+		  HorizontalAlignment="Right"
+		  Grid.Column="2"
+		  Grid.Row="0">
+		  <TextBlock
+			  Height="60"
+			  Width="300"
+			  TextWrapping="Wrap"
+			  Name="fioTxt">
+			  </TextBlock>
+		  
+		  </StackPanel>
+	  <StackPanel
+		  Grid.Row="1"
+		  Grid.Column="0"
+		  Grid.ColumnSpan="3"
+		  Orientation="Vertical"
+		  >
+		  <ListBox
+				Height="400"
+			  Width="650"
+			  Name="listUser">
+			  <ListBox.ItemTemplate>
+				  <DataTemplate
+					  x:CompileBindings="False">
+					  <Grid
+						  Background="{Binding color}"
+						  ColumnDefinitions="150,300,100, 100">
+						  <StackPanel
+							  Grid.Column="0">
+							  <Image
+								  Source="{Binding bitmap}"
+								  Name="img">
+							  </Image>
+						  </StackPanel>
+						  <StackPanel
+							  Orientation="Vertical"
+							  Grid.Column="1">
+							  <TextBlock
+								  Text="{Binding Name}">
+							  </TextBlock>
+							  <TextBlock
+								  HorizontalAlignment="Left"
+								  Width="240"
+								  TextWrapping="Wrap"
+								  Height="50"
+								 Text="{Binding Descr}">
+							  </TextBlock>
+							  <TextBlock
+								Text="{Binding Manuf}">
+							  </TextBlock>
+							  <StackPanel
+								  Orientation="Horizontal">
+								  <TextBlock
+									TextDecorations="Strikethrough"
+								   Text="{Binding Cost}">
+								  </TextBlock>
+								  <TextBlock
+							   Text="{Binding ItogCost}">
+								  </TextBlock>
+							  </StackPanel>
+						  </StackPanel>
+						  <StackPanel
+							  Orientation="Horizontal"
+							  Grid.Column="2">
+							  <TextBlock
+								  Text="{Binding Currdisc}">
+							  </TextBlock>
+							  <TextBlock
+								 Text="%">
+							  </TextBlock>
+						  </StackPanel>
+					  </Grid>
+				  </DataTemplate>
+			  </ListBox.ItemTemplate>
+			  <ListBox.ContextMenu>
+				  <ContextMenu>
+					  <MenuItem
+						  Click="MenuItem_Click"
+						  Header="Добавить в заказ">
+					  </MenuItem>
+				  </ContextMenu>
+			  </ListBox.ContextMenu>
+		  </ListBox>
+		  
+		  <ListBox
+				Height="400"
+			  Width="750"
+			  IsVisible="False"
+			  Name="listAdm">
+			  <ListBox.ItemTemplate>
+				  <DataTemplate
+					  x:CompileBindings="False">
+					  <Grid
+						  Background="{Binding color}"
+						  ColumnDefinitions="150,300,100, 150">
+						  <StackPanel
+							  Grid.Column="0">
+							  <Image
+								  Source="{Binding bitmap}"
+								  Name="img">
+								  </Image>
+							  </StackPanel>
+						  <StackPanel
+							  Orientation="Vertical"
+							  Grid.Column="1">
+							  <TextBlock
+								 Text="{Binding IdProd}">
+							  </TextBlock>
+							  <TextBlock
+								  Text="{Binding Name}">
+								  </TextBlock>
+							  <TextBlock
+								  HorizontalAlignment="Left"
+								  Width="240"
+								  TextWrapping="Wrap"
+								  Height="50"
+								 Text="{Binding Descr}">
+							  </TextBlock>
+							  <TextBlock
+								Text="{Binding Manuf}">
+							  </TextBlock>
+							  <StackPanel
+								  Orientation="Horizontal">
+								  <TextBlock
+									TextDecorations="Strikethrough"
+								   Text="{Binding Cost}">
+							  </TextBlock>
+								  <TextBlock
+							   Text="{Binding ItogCost}">
+								  </TextBlock>
+								  </StackPanel>
+							  </StackPanel>
+						  <StackPanel
+							  Orientation="Horizontal"
+							  Grid.Column="2">
+							  <TextBlock
+								  Text="{Binding Currdisc}">
+								  </TextBlock>
+							  <TextBlock
+								 Text="%">
+							  </TextBlock>
+						  </StackPanel>
+						  <StackPanel
+							  Grid.Column="3">
+							  <Button
+								  Tag="{Binding IdProd}"
+								  Click="Delete_Click"
+								  Content="Удалить">
+							  </Button>
+							  <Button
+								 Tag="{Binding IdProd}"
+								 Click="Edit_Click"
+								 Content="Редактировать">
+							  </Button>
+						  </StackPanel>
+					  </Grid>
+					</DataTemplate>
+			  </ListBox.ItemTemplate>
+			  <ListBox.ContextMenu>
+				  <ContextMenu>
+				  <MenuItem
+					  Click="MenuItem_Click"
+					  Header="Добавить в заказ">
+					  </MenuItem>
+				  </ContextMenu>
+			  </ListBox.ContextMenu>
+			</ListBox>
+		  <Button
+			  Name="addBtn"
+			  Content="Добавить новый товар"
+			  Click="Add_Click">
+			  </Button>
+			  </StackPanel>
+	  </Grid>
+</Window>

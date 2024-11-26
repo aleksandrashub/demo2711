@@ -1,0 +1,106 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="demo21111.Korz"
+        Title="Korz">
+ <Grid
+	 RowDefinitions="100,*">
+	 <StackPanel
+		 Grid.Row="0">
+		 <Button
+			 Content="Выйти в каталог"
+			 Click="vyhod_Click">
+			 </Button>
+		 </StackPanel>
+	 <StackPanel
+		 Grid.Row="1">
+		 <ListBox
+			 Name="list">
+			 <ListBox.ItemTemplate>
+				 <DataTemplate
+					 x:CompileBindings="False">
+					 <Grid
+						 ColumnDefinitions="150,400, 100, 200, 150">
+					 <StackPanel
+						 Grid.Column="0">
+						 <Image
+							 Height="100"
+							 Width="100"
+							 Source="{Binding IdProdNavigation.bitmap}">
+							 </Image>
+						 </StackPanel>
+						 <StackPanel
+							 Orientation="Vertical"
+							 Grid.Column="1">
+							 <TextBlock
+								 Text="{Binding IdProdNavigation.Name}">
+							 </TextBlock>
+							 <TextBlock
+								 HorizontalAlignment="Left"
+								 Width="240"
+								 TextWrapping="Wrap"
+								 Height="50"
+								Text="{Binding IdProdNavigation.Descr}">
+							 </TextBlock>
+							 <TextBlock
+							   Text="{Binding IdProdNavigation.Manuf}">
+							 </TextBlock>
+							 <StackPanel
+								 Orientation="Horizontal">
+								 <TextBlock
+								   TextDecorations="Strikethrough"
+								  Text="{Binding IdProdNavigation.Cost}">
+								 </TextBlock>
+								 <TextBlock
+							  Text="{Binding IdProdNavigation.ItogCost}">
+								 </TextBlock>
+							 </StackPanel>
+						 </StackPanel>
+						 <StackPanel
+							 Orientation="Horizontal"
+							 Grid.Column="2">
+							 <TextBlock
+								 Text="{Binding IdProdNavigation.Currdisc}">
+							 </TextBlock>
+							 <TextBlock
+								Text="%">
+							 </TextBlock>
+						 </StackPanel>
+						 <StackPanel
+							 Orientation="Horizontal"
+							 Grid.Column="3">
+							 <Button
+								 Click="Minus_Click"
+								 Tag="{Binding IdProd}"
+								 Height="30"
+								 Width="30"
+								 Content="-">
+								 </Button>
+							 <TextBlock	
+								 Text="{Binding Amount}"
+								 Name="kolvo">
+							 </TextBlock>
+							 <Button
+								 Click="Plus_Click"
+								 Tag="{Binding IdProd}"
+								 Height="30"
+								 Width="30"
+								 Content="+">
+							 </Button>
+							 </StackPanel>
+						 </Grid>
+					 </DataTemplate>
+			 </ListBox.ItemTemplate>
+			</ListBox> 
+		 <TextBlock
+			 Text="Выберите пункт выдачи:">
+		 </TextBlock>
+		 <ComboBox
+			 Width="200"
+			 Name="punkts">
+			 </ComboBox>
+		 </StackPanel>
+	 </Grid>
+</Window>
