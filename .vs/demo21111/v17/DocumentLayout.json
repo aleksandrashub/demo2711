@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\korz.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|c:\\users\\prdb\\downloads\\demo2111-main\\demo2111\\korz.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|solutionrelative:korz.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\korz.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|solutionrelative:korz.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\addnew.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|solutionrelative:addnew.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\catalog.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\catalog.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|solutionrelative:catalog.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|c:\\users\\prdb\\downloads\\demo2111-main\\demo2111\\addnew.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|solutionrelative:addnew.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B37EA149-A800-473D-9D0C-DA346C9DA3A8}|demo21111.csproj|C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,32 +77,31 @@
               "RelativeDocumentMoniker": "Korz.axaml.cs",
               "ToolTip": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\Korz.axaml.cs",
               "RelativeToolTip": "Korz.axaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAcwCkAAAAIAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAmwIwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T09:44:18.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AddNew.axaml",
               "DocumentMoniker": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\AddNew.axaml",
               "RelativeDocumentMoniker": "AddNew.axaml",
               "ToolTip": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\AddNew.axaml",
               "RelativeToolTip": "AddNew.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-21T08:51:30.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T08:51:30.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AddNew.axaml.cs",
               "DocumentMoniker": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\AddNew.axaml.cs",
               "RelativeDocumentMoniker": "AddNew.axaml.cs",
               "ToolTip": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\AddNew.axaml.cs",
               "RelativeToolTip": "AddNew.axaml.cs",
-              "ViewState": "AQIAAMoAAAAAAAAAAAAcwIwAAAAWAAAA",
+              "ViewState": "AQIAALEAAAAAAAAAAAAcwIwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T08:51:30.195Z",
               "EditorCaption": ""
@@ -121,25 +120,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Catalog.axaml",
               "DocumentMoniker": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\Catalog.axaml",
               "RelativeDocumentMoniker": "Catalog.axaml",
               "ToolTip": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\Catalog.axaml",
               "RelativeToolTip": "Catalog.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-21T07:51:02.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T07:51:02.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Catalog.axaml.cs",
               "DocumentMoniker": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\Catalog.axaml.cs",
               "RelativeDocumentMoniker": "Catalog.axaml.cs",
               "ToolTip": "C:\\Users\\prdb\\Downloads\\demo2111-main\\demo2111\\Catalog.axaml.cs",
               "RelativeToolTip": "Catalog.axaml.cs",
-              "ViewState": "AQIAAN0AAAAAAAAAAAAAAN4AAAA+AAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAIwN8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T07:51:01.612Z",
               "EditorCaption": ""
@@ -154,8 +152,7 @@
               "RelativeToolTip": "Helper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T07:44:42.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T07:44:42.091Z"
             },
             {
               "$type": "Document",

@@ -6,13 +6,19 @@
         x:Class="demo21111.Korz"
         Title="Korz">
  <Grid
-	 RowDefinitions="100,*">
+	 RowDefinitions="100,400,400">
 	 <StackPanel
+		 Orientation="Horizontal"
 		 Grid.Row="0">
 		 <Button
 			 Content="Выйти в каталог"
 			 Click="vyhod_Click">
 			 </Button>
+		 <TextBlock
+			 TextWrapping="Wrap"
+			 Width="300"
+			 Name="fiouser">
+			 </TextBlock>
 		 </StackPanel>
 	 <StackPanel
 		 Grid.Row="1">
@@ -21,6 +27,7 @@
 			 <ListBox.ItemTemplate>
 				 <DataTemplate
 					 x:CompileBindings="False">
+					 <ScrollViewer>
 					 <Grid
 						 ColumnDefinitions="150,400, 100, 200, 150">
 					 <StackPanel
@@ -91,9 +98,16 @@
 							 </Button>
 							 </StackPanel>
 						 </Grid>
+						 </ScrollViewer>
 					 </DataTemplate>
 			 </ListBox.ItemTemplate>
 			</ListBox> 
+		 </StackPanel>
+		 <StackPanel
+			 Orientation="Horizontal"
+			 Grid.Row="2">
+			 <StackPanel
+				 Orientation="Vertical">
 		 <TextBlock
 			 Text="Выберите пункт выдачи:">
 		 </TextBlock>
@@ -101,6 +115,34 @@
 			 Width="200"
 			 Name="punkts">
 			 </ComboBox>
+				 <Button
+					 Content="Оформить заказ"
+					 Click="CreateOrder_Click">
+					 </Button>
+				 </StackPanel>
+			 <StackPanel
+				 Orientation="Vertical">
+			 <TextBlock
+				 Width="200"
+				 Name="dateZak">
+				 </TextBlock>
+			 <TextBlock
+				 Width="200"
+				 Name="dateDel">
+			 </TextBlock>
+				 <TextBlock
+				Width="150"
+				Name="code">
+				 </TextBlock>
+				 <TextBlock
+				Width="150"
+				Name="allcost">
+				 </TextBlock>
+				 <TextBlock
+				Width="150"
+				Name="disccost">
+				 </TextBlock>
+				 </StackPanel>
 		 </StackPanel>
 	 </Grid>
 </Window>
